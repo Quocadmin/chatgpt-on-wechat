@@ -736,3 +736,97 @@ FAQs： <https://github.com/zhayujie/chatgpt-on-wechat/wiki/FAQs>
 # 🌟 贡献者
 
 ![cow contributors](https://contrib.rocks/image?repo=zhayujie/chatgpt-on-wechat&max=1000)
+
+1. Dự án này là gì?
+chatgpt-on-wechat (gọi tắt là CoW) là một hệ thống chatbot AI mã nguồn mở, giúp bạn tích hợp các mô hình AI như ChatGPT, Claude, Gemini... vào các nền tảng như website, WeChat, WeCom (doanh nghiệp WeChat), Feishu, DingTalk, v.v. Bạn có thể sử dụng nó để tạo chatbot trò chuyện thông minh, hỗ trợ trả lời văn bản, nhận diện giọng nói, xử lý hình ảnh, tài liệu, và còn có thể tích hợp thêm plugin cho các tính năng mở rộng như tìm kiếm trên mạng, tóm tắt tài liệu, multi-agent (nhiều AI phối hợp), chatbot chăm sóc khách hàng, v.v.
+
+2. Dành cho ai?
+Cá nhân, doanh nghiệp, lập trình viên muốn xây dựng chatbot AI dễ dàng, đa nền tảng.
+
+Bạn có thể dùng làm trợ lý AI cá nhân, tổng đài tự động, chatbot tư vấn, trả lời email, chăm sóc khách hàng, v.v.
+
+3. Điểm mạnh nổi bật
+Triển khai đa nền tảng: Dùng được trên web, WeChat, WeCom, Feishu, DingTalk...
+
+Hỗ trợ nhiều mô hình AI lớn: ChatGPT, Claude, Gemini, DeepSeek, Kimi, Qwen, Baidu Wenxin, v.v.
+
+Hỗ trợ đa dạng loại dữ liệu: Văn bản, giọng nói (text-to-speech, speech-to-text), hình ảnh (AI vẽ tranh, nhận diện ảnh), tài liệu...
+
+Hệ thống plugin phong phú: Có thể mở rộng chức năng qua plugin – ví dụ: tóm tắt cuộc chat, tìm kiếm trên mạng, lọc từ nhạy cảm, multi-agent,...
+
+Tích hợp Agent & Truy cập hệ thống ngoài: Có thể cho phép AI truy cập internet, hệ điều hành, file, trình duyệt...
+
+Tích hợp Knowledge Base: Bạn có thể upload kiến thức riêng để tạo trợ lý AI cá nhân, chatbot doanh nghiệp.
+
+4. Hướng dẫn cơ bản để bắt đầu
+Bước 1: Chuẩn bị
+Cần có Python 3.7 trở lên (khuyên dùng 3.9).
+
+Nên có tài khoản API của OpenAI hoặc các nền tảng AI khác (như LinkAI, Baidu, v.v.).
+
+Có thể chạy trên Windows, MacOS, Linux, hoặc dùng Docker.
+
+Bước 2: Cài đặt
+Clone dự án về:
+
+bash
+Sao chép
+Chỉnh sửa
+git clone https://github.com/zhayujie/chatgpt-on-wechat
+cd chatgpt-on-wechat/
+Cài thư viện bắt buộc:
+
+bash
+Sao chép
+Chỉnh sửa
+pip3 install -r requirements.txt
+(Tuỳ chọn) Cài thêm thư viện mở rộng:
+
+bash
+Sao chép
+Chỉnh sửa
+pip3 install -r requirements-optional.txt
+Bước 3: Cấu hình
+Copy file cấu hình mẫu:
+
+bash
+Sao chép
+Chỉnh sửa
+cp config-template.json config.json
+Điền các thông tin cần thiết vào config.json như:
+
+Loại kênh kết nối (web, wechat, feishu…)
+
+Thông tin API key các dịch vụ AI bạn muốn dùng
+
+Các cài đặt về hội thoại, nhóm, nhận diện giọng nói, v.v.
+
+Bước 4: Khởi động
+Chạy chatbot trên web:
+
+bash
+Sao chép
+Chỉnh sửa
+python3 app.py
+Truy cập http://localhost:9899/chat để thử nghiệm chat trên web.
+
+5. Một số lưu ý
+Có thể triển khai trên server hoặc máy cá nhân, hoặc dùng Docker cho tiện.
+
+Có thể thêm/bớt, tùy biến plugin hoặc kênh kết nối theo nhu cầu riêng.
+
+Dự án mã nguồn mở theo MIT, chủ yếu dành cho học tập, nghiên cứu và phát triển ứng dụng AI hợp pháp.
+
+6. Tài liệu, hỗ trợ và cộng đồng
+Demo Video: Xem tại đây
+
+Tài liệu hướng dẫn chi tiết: Quick Start
+
+FAQ và hỗ trợ: Xem FAQs
+
+Tham gia cộng đồng: Thêm bạn Zalo/WeChat của trợ lý để vào nhóm open source.
+
+Doanh nghiệp muốn tích hợp sâu: Tham khảo LinkAI
+
+7. Kết luận
+chatgpt-on-wechat là dự án mạnh mẽ, tiện lợi, dễ mở rộng để tự xây dựng chatbot AI thông minh phục vụ mọi mục đích cá nhân hay doanh nghiệp, dễ học – dễ làm – cộng đồng lớn.
